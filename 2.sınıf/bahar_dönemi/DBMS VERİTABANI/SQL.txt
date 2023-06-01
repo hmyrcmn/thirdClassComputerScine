@@ -1,0 +1,80 @@
+CREATE TABLE hasta (
+	hasta_ıd int not null,
+	name varchar ,
+	surname varchar, 
+	age int,
+	kan_grup varchar,
+	tell text(25),
+	hastalık_ıd int not null
+    
+);
+
+CREATE TABLE doktor (
+    	doktor_ıd int not null,
+	name varchar ,
+	surname varchar, 
+	age int,
+	tell text(25),
+	uzmanlık_alan varchar,
+	aile_hekimligi_ıd int not null
+	
+);
+
+
+INSERT INTO hasta (hasta_ıd, name, surname, age,kan_grup,tell,hastalık_ıd)
+VALUES (1, "hümeyra","çimen",21,"0RH(+)","0500 000 00 00",1);
+
+INSERT INTO hasta (hasta_ıd, name, surname, age,kan_grup,tell,hastalık_ıd)
+VALUES (2, "sümeyye","çimen",18,"0RH(+)","0500 000 00 01",2);
+
+INSERT INTO hasta (hasta_ıd, name, surname, age,kan_grup,tell,hastalık_ıd)
+VALUES (3, "ayşe","yılmaz",55,"ARH(+)","0500 000 00 02",2);
+
+INSERT INTO doktor (doktor_ıd, name, surname, age,tell, uzmanlık_alan,aile_hekimligi_ıd)
+VALUES (1, "emre","yılmaz",30,"0500 000 00 11","dahiliye",3);
+
+INSERT INTO doktor (doktor_ıd, name, surname, age,tell,uzmanlık_alan,,aile_hekimligi_ıd)
+VALUES (2, "ebru","çimen",25,"0500 000 00 22","yeni dogan yogum bakım",yüksek lisans",3);
+
+INSERT INTO doktor (doktor_ıd, name, surname, age,tell,uzmanlık_alan,aile_hekimligi_ıd)
+VALUES (3, "emre","uygun",30,"0500 000 00 33","göz",5);
+
+ALTER TABLE hasta
+ADD PRIMARY KEY (hasta_ıd);
+
+ALTER TABLE doktor
+ADD PRIMARY KEY (doktor_ıd);
+
+ALTER TABLE hasta
+ADD FOREIGN KEY (hastalık_ıd) REFERENCES hastalık(hastalık_ıd);
+
+ALTER TABLE doktor
+ADD FOREIGN KEY (aile_hekimligi_ıd) REFERENCES aıle_hekımlıgı(aile_hekimligi_ıd);
+
+
+
+UPDATE hasta
+SET age = 20
+WHERE hasta_ıd = 1;
+
+UPDATE doktor
+SET tell="0500 000 00 44"
+WHERE doktor_ıd = 3;
+
+DELETE FROM hasta;
+DROP TABLE doktor;
+DROP DATABASE veritabanim;
+
+SELECT * FROM hasta WHERE hastalık_ıd=2
+SELECT * FROM `hasta` GROUP BY surname="çimen";
+SELECT doktor_ıd,surname FROM `doktor` GROUP BY name="emre"
+
+
+SELECT * FROM hasta
+ORDER BY hasta_ıd DESC;
+
+
+
+
+
+
