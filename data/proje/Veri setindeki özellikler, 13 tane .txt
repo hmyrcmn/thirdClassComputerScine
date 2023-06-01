@@ -1,0 +1,13 @@
+Veri setindeki özellikler, 13 tane sayısal ve kategorik öznitelikten oluşur. Bu özellikler sırasıyla yaş, cinsiyet, göğüs ağrısı tipi, istirahat kan basıncı, kolestrol, açlık kan şekeri, dinlenme elektrokardiyogramı sonucu, maksimum kalp atış hızı, egzersiz ile indüklenen anjina, ST segmentinin eğimi, en yüksek ST segmentindeki değişim, göğüs ağrısı nedeni olarak belirlenen ana damarın sayısı ve talasemi durumu.
+
+Veri setinde 303 adet veri bulunmaktadır ve veriler "0" ve "1" etiketleriyle etiketlenmiştir. "0" etiketi kalp hastalığı olmadığını, "1" etiketi ise kalp hastalığı varlığını ifade eder.
+
+Veri setinde eksik veriler yoktur.
+
+Veriler normalleştirilmelidir çünkü farklı özelliklerin ölçekleri farklı olabilir ve bu durum sınıflandırma modeli için doğru sonuçları veremez. Bu nedenle, özellikler arasındaki ölçek farklılıklarını gidermek için normalleştirme işlemi uygulanmalıdır.
+
+Sınıflandırma hedefi, kalp hastalığı tanısıdır.
+
+Bu veri seti için sınıflandırma modeli seçimi, karar ağacı tabanlı yöntemler olabilir. Çünkü karar ağacı modelleri, verileri açık bir şekilde anlamak ve yorumlamak için kullanılabilir ve karar verme sürecini görselleştirebilirler. Özellikle, veri seti oldukça küçük olduğu için, daha karmaşık modellerin overfitting yapması muhtemeldir. Bu nedenle, karar ağacı tabanlı yöntemler daha basit ve daha doğru sonuçlar verebilirler.
+
+Bu nedenle, bu veri seti için en iyi sınıflandırma yöntemi karar ağacı tabanlı yöntemlerdir.
