@@ -1,0 +1,37 @@
+Nominal sıralama yok  siniflandirma ölçeği 
+Ordinal ki kare testi 
+Interval nicel zeka düzeyi yıl aralıklı mutlak sıfır yok  .  Kıyaslama  fark belirtilir yapılır oranlama yapılamaz 
+Oransal  fark oran alınır mat işlem 
+Ölçekler arası geçis mumkunudr 
+ Aşağıdan yukarı geçiş var  veri kaybediir 
+ 
+Elindeki verinin kaç sınıf olacağını sturhes kuralına göre 
+K: 1+3.3*logn 
+Ham veri 
+Sınıf sayısı belirlenir 
+He rbur sınıfın sınıf araligini belirlleiz 
+Max ile.min arasındaki fark 
+3.verideki en büyük veriden en küçük değeri çıkartıp sınıf sayısına bölüyoruz sınıf araligini buluruz 
+
+İlk sınıfın alt sınırı min değer 
+İkindi sınıf alt sınırına sınıf aralığı ekle 
+
+
+Dal yaprak grafikleri 
+Histpgram.dahilim şekli yönünü verir  
+Noktalar birleşince çizgi altındaki alan 1e eşittir 
+
+Merkezi eğilim ölçüleri :her değer başka verinin yakinidir
+
+Dağılım olculeri
+Açıklık en büyük ve en küçük değer arasındaki fark acikliktir 
+Ort aynı ise aynı degildir 
+Rank  açıklığı küçük olan daha homojen değerler içerir 
+Sınırlı veride son sınıfın üst sınırından ilk sınıfın min in çıkarılmasından bulunur 
+
+
+...,..
+
+Hormanik ortalama verimlilik için kullanılır 
+Küçük değerler den çok etkilenir 
+Büyük degerlede. Az etkilenir

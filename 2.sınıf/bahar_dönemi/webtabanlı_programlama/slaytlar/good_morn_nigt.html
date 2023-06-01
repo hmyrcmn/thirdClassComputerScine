@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ASAL SAYI KONROL</title>
+    </head>
+    <meta charset="UTF-8" name="aouthor" content="HÜMEYRA ÇİMEN "  />
+<body> 
+    <h1 id="datem"></h1>
+    <script>
+        var now_date=new Date();
+        var now_clock=now_date.getHours();
+        if(now_clock<22){
+            document.getElementById("datem").innerHTML="GÜNAYDIN";
+        }else{
+            document.getElementById("datem").innerHTML="İYİ GECELER";
+        }
+       
+      
+    </script>
+</body>
+</html>

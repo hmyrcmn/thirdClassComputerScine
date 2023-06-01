@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>create 100 1 table</title>
+    </head>
+    <body>
+        <script>
+            for(var i=1;i<=7;i++){
+                for(var j=1;j<i;j++){
+                    document.write("#")
+                }
+                document.write("<br/>");
+            }
+            var table=document.createAttribute(table);
+            document.write("<td>"+'*'+"</td>");
+            for(var i=0;i<100;i++){
+                document.write("<th>"+i+"</th>");
+            }
+            
+        </script>
+    </body>
+</html>

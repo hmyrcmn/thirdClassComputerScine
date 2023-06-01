@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ASAL SAYI KONROL</title>
+    </head>
+    <meta charset="UTF-8" name="aouthor" content="HÜMEYRA ÇİMEN "  />
+<body>
+
+<p id="demo"></p>
+
+<script>
+var gelen=prompt("asal kontorlu için sayı giirniz : ");
+function ıs_asal(x){
+    var control=1;
+    
+        for(var y=2;y<x;y++){
+            if(x%y==0){
+                control=0;
+                window.confirm("ASAL DEĞİL");
+                //document.getElementById("demo").innerHTML="ASAL DEĞİL"
+            }
+        }
+        if(control){
+            window.confirm("ASAL ");
+           // document.getElementById("demo").innerHTML="asal";
+        }
+    }
+ıs_asal(gelen);
+    
+</script>
+
+</body>
+</html>
